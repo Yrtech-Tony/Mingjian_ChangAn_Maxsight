@@ -99,6 +99,7 @@
             this.simpleButton2.Size = new System.Drawing.Size(116, 36);
             this.simpleButton2.TabIndex = 99;
             this.simpleButton2.Text = "更新区域信息";
+            this.simpleButton2.Visible = false;
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // simpleButton1
@@ -108,6 +109,7 @@
             this.simpleButton1.Size = new System.Drawing.Size(116, 36);
             this.simpleButton1.TabIndex = 98;
             this.simpleButton1.Text = "上传数据";
+            this.simpleButton1.Visible = false;
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // labelControl5

@@ -453,7 +453,7 @@ public class Service : System.Web.Services.WebService
             }
             catch (Aliyun.OpenServices.OpenStorageService.OssException ex)
             {
-                
+                CommonHandler.log(ex.Message.ToString());
             }
             
         }

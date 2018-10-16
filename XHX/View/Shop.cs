@@ -296,7 +296,7 @@ namespace XHX.View
         {
             Workbook workbook = msExcelUtil.OpenExcelByMSExcel(btnModule.Text);
             Worksheet worksheet_FengMian = workbook.Worksheets["Shop"] as Worksheet;
-            for (int i = 2; i < 500; i++)
+            for (int i = 2; i < 1000; i++)
             {
                 string shopCode = msExcelUtil.GetCellValue(worksheet_FengMian, "A", i).Trim();
                 string shopCode1 = msExcelUtil.GetCellValue(worksheet_FengMian, "B", i).Trim();
@@ -309,18 +309,19 @@ namespace XHX.View
                     string areaCode_after = msExcelUtil.GetCellValue(worksheet_FengMian, "D", i);
                     webService.SaveShop(areaCode_sale, areaCode_after, shopCode, shopName, true, this.UserInfoDto.UserID, province, city);
                 }
-                else
-                {
-                    if (!string.IsNullOrEmpty(shopCode1))
-                    {
-                        string shopName = msExcelUtil.GetCellValue(worksheet_FengMian, "G", i).Trim();
-                        string province = msExcelUtil.GetCellValue(worksheet_FengMian, "E", i);
-                        string city = msExcelUtil.GetCellValue(worksheet_FengMian, "F", i);
-                        string areaCode_sale = msExcelUtil.GetCellValue(worksheet_FengMian, "C", i).Trim();
-                        string areaCode_after = msExcelUtil.GetCellValue(worksheet_FengMian, "D", i).Trim();
-                        webService.SaveShop(areaCode_sale, areaCode_after, shopCode1, shopName, true, this.UserInfoDto.UserID, province, city);
-                    }
-                }
+                //else
+                //{
+                //    if (!string.IsNullOrEmpty(shopCode1))
+                //    {
+                //        string shopName = msExcelUtil.GetCellValue(worksheet_FengMian, "G", i).Trim();
+                //        string province = msExcelUtil.GetCellValue(worksheet_FengMian, "E", i);
+                //        string city = msExcelUtil.GetCellValue(worksheet_FengMian, "F", i);
+                //        string areaCode_sale = msExcelUtil.GetCellValue(worksheet_FengMian, "C", i).Trim();
+                //        string areaCode_after = msExcelUtil.GetCellValue(worksheet_FengMian, "D", i).Trim();
+                //        webService.SaveShop(areaCode_sale, areaCode_after, shopCode1, shopName, true, this.UserInfoDto.UserID, province, city);
+                //    }
+                //}
+                CommonHandler.ShowMessage(MessageType.Information, "上传完毕");
             }
         }
 
