@@ -24,7 +24,7 @@
     <OldToolsVersion>3.5</OldToolsVersion>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
-    <PublishUrl>C:\Workspace\Mingjian_ChangAn_Maxsight\发布文件\</PublishUrl>
+    <PublishUrl>C:\New Folder\Mingjian_ChangAn_Maxsight\发布文件\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -1464,7 +1464,25 @@
     <None Include="XHX_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <PublishFile Include="Aliyun.OpenServices">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
     <PublishFile Include="AxInterop.DSOFramer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DbAccess">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -1581,6 +1599,15 @@
       <PublishState>Include</PublishState>
       <FileType>Assembly</FileType>
     </PublishFile>
+    <PublishFile Include="Infragistics3.Excel.v10.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
     <PublishFile Include="Interop.DSOFramer">
       <Visible>False</Visible>
       <Group>
@@ -1609,6 +1636,24 @@
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="Microsoft.Office.Interop.Excel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="office">
       <Visible>False</Visible>
       <Group>
       </Group>
